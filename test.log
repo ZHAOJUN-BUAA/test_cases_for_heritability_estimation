@@ -1,0 +1,29 @@
+PLINK v1.90b6.18 64-bit (16 Jun 2020)
+Options in effect:
+  --assoc
+  --make-bed
+  --out heri_0.001
+  --simulate-n 10000
+  --simulate-qt heri.sim
+
+Hostname: nia-login02.scinet.local
+Working directory: /gpfs/fs0/scratch/g/gbader/daxin/test_cases_heritability_estimation
+Start time: Mon Dec 11 16:12:19 2023
+
+Random number seed: 1702329139
+96190 MB RAM detected; reserving 48095 MB for main workspace.
+Writing --simulate-qt dataset to heri_0.001-temporary.bed +
+heri_0.001-temporary.bim + heri_0.001-temporary.fam ... done.
+Realized simulation parameters saved to heri_0.001-temporary.simfreq.
+1000 variants loaded from .bim file.
+10000 people (0 males, 10000 females) loaded from .fam.
+10000 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 10000 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+1000 variants and 10000 people pass filters and QC.
+Phenotype data is quantitative.
+--make-bed to heri_0.001.bed + heri_0.001.bim + heri_0.001.fam ... done.
+Writing QT --assoc report to heri_0.001.qassoc ... done.
+
+End time: Mon Dec 11 16:12:20 2023
