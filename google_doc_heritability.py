@@ -27,8 +27,8 @@ Dependencies:
 
 Files Required:
 ---------------
-- Genotype files: test.bed, test.fam, test.bim
-- Phenotype files: single.h2.0.10.10000.phen, single.h2.0.20.10000.phen
+- Genotype files: test.bed, test.fam, test.bim. The number of SNPs is set to 1000 with 10000 samples.
+- Phenotype files: single.h2.0.10.10000.phen, single.h2.0.20.10000.phen with heritability of 0.1 and 0.2 seperately.
 """
 
 # Defining parameters for heritability estimations
