@@ -131,30 +131,30 @@ time_end = time.time()
 print(f"Run time is {time_end-time_start} sec.")
 
 # Visualization of results
-fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(6, 5), sharey=True)
-boxplot = axes.boxplot(sigma_df, patch_artist=True)
+# fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(6, 5), sharey=True)
+# boxplot = axes.boxplot(sigma_df, patch_artist=True)
 
-# Customizing boxplot components
-for box in boxplot['boxes']:
-    box.set_facecolor('#eeeeee')  # Setting the box color
-    box.set_linestyle('-')  # Setting the line style for the boxes
+# # Customizing boxplot components
+# for box in boxplot['boxes']:
+#     box.set_facecolor('#eeeeee')  # Setting the box color
+#     box.set_linestyle('-')  # Setting the line style for the boxes
 
-for median in boxplot['medians']:
-    median.set_color('black')  # Setting the median line color
+# for median in boxplot['medians']:
+#     median.set_color('black')  # Setting the median line color
 
-for whisker in boxplot['whiskers']:
-    whisker.set_linestyle(':')  # Setting the whisker line style
+# for whisker in boxplot['whiskers']:
+#     whisker.set_linestyle(':')  # Setting the whisker line style
 
-# Final plot adjustments
-plt.tight_layout()
-plt.ylim(0, 0.2)
-axes.yaxis.set_major_locator(ticker.MultipleLocator(0.1)) 
-plt.tick_params(labelsize=10, length=6, width=1, axis='both', direction='in')
-plt.ylabel("Estimated heritability", fontsize=10, fontweight='bold')
-axes.set_xticklabels(['Simulated heritability:0.1', 'Simulated heritability:0.2'], fontsize=10, fontweight='bold')
-for label in axes.get_yticklabels():
-    label.set_fontweight('bold')
+# # Final plot adjustments
+# plt.tight_layout()
+# plt.ylim(0, 0.2)
+# axes.yaxis.set_major_locator(ticker.MultipleLocator(0.1)) 
+# plt.tick_params(labelsize=10, length=6, width=1, axis='both', direction='in')
+# plt.ylabel("Estimated heritability", fontsize=10, fontweight='bold')
+# axes.set_xticklabels(['Simulated heritability:0.1', 'Simulated heritability:0.2'], fontsize=10, fontweight='bold')
+# for label in axes.get_yticklabels():
+#     label.set_fontweight('bold')
 
-# Displaying the plot
-plt.axhline(y=0.1, color='black', linestyle='--')
-plt.show()
+# # Displaying the plot
+# plt.axhline(y=0.1, color='black', linestyle='--')
+# plt.show()
